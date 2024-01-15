@@ -88,3 +88,32 @@ h6 {
   font-weight: 500;
   font-style: normal;
 }
+
+:root {
+  --clr-accent-green: hsl(153, 71%, 59%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 85%);
+  --clr-neutral-300: hsl(0, 0%, 14%);
+  --clr-neutral-400: hsl(0, 0%, 8%);
+
+  --clr-error: hsl(7, 100%, 68%);
+
+  --ff-primary: "Space Grotesk", "sans-serif";
+
+  --fw-bold: 700;
+  --fw-medium: 500;
+
+  --fs-heading-xl: 2.5rem;
+  --fs-heading-l: 2rem;
+  --fs-heading-m: 1.5rem;
+
+  --fs-body: 1rem;
+
+  /* Desktop */
+  /* --fs-heading-xl: 5.5rem;
+  --fs-heading-l: 3rem;
+  --fs-heading-m: 1.5rem;
+
+  --fs-body: 1.125rem; */
+}
