@@ -56,11 +56,13 @@
     <main>
       <h1 class="visually-hidden">Adam Keyes - Portfolio Website</h1>
       <div class="card">
-        <img
-          src="assets/images/image-profile-mobile.webp"
-          alt="Adam Keyes"
-          class="card__image"
-        />
+        <picture class="card__image">
+          <source
+            media="(min-width: 40rem)"
+            srcset="assets/images/image-profile-tablet.webp"
+          />
+          <img src="assets/images/image-profile-mobile.webp" alt="Adam Keyes" />
+        </picture>
         <h2 class="card__title">
           Nice to meet you! I'm <span class="card__underline">Adam Keyes</span>.
         </h2>
@@ -215,41 +217,43 @@
         ></textarea>
         <button type="submit" class="form__submit">Send message</button>
       </form>
-      <p class="footer__name">adamkeyes</p>
-      <ul class="social-links social-links--footer">
-        <li>
-          <a href="" class="social-link"
-            ><img
-              class="social-link__image"
-              src="assets/images/icon-github.svg"
-              alt="Github"
-          /></a>
-        </li>
-        <li>
-          <a href="" class="social-link"
-            ><img
-              class="social-link__image"
-              src="assets/images/icon-frontend-mentor.svg"
-              alt="Frontendmentor"
-          /></a>
-        </li>
-        <li>
-          <a href="" class="social-link"
-            ><img
-              class="social-link__image"
-              src="assets/images/icon-linkedin.svg"
-              alt="Linkdin"
-          /></a>
-        </li>
-        <li>
-          <a href="" class="social-link"
-            ><img
-              class="social-link__image"
-              src="assets/images/icon-twitter.svg"
-              alt="X, formerly twitter"
-          /></a>
-        </li>
-      </ul>
+      <div class="footer__cont">
+        <p class="footer__name">adamkeyes</p>
+        <ul class="social-links social-links--footer">
+          <li>
+            <a href="" class="social-link"
+              ><img
+                class="social-link__image"
+                src="assets/images/icon-github.svg"
+                alt="Github"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="social-link"
+              ><img
+                class="social-link__image"
+                src="assets/images/icon-frontend-mentor.svg"
+                alt="Frontendmentor"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="social-link"
+              ><img
+                class="social-link__image"
+                src="assets/images/icon-linkedin.svg"
+                alt="Linkdin"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="social-link"
+              ><img
+                class="social-link__image"
+                src="assets/images/icon-twitter.svg"
+                alt="X, formerly twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
