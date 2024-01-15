@@ -61,6 +61,10 @@
             media="(min-width: 40rem)"
             srcset="assets/images/image-profile-tablet.webp"
           />
+          <source
+            media="(min-width: 60rem)"
+            srcset="assets/images/image-profile-desktop.webp"
+          />
           <img src="assets/images/image-profile-mobile.webp" alt="Adam Keyes" />
         </picture>
         <h2 class="card__title">
@@ -198,26 +202,28 @@
     </main>
 
     <footer>
-      <p class="footer__title">Contact</p>
-      <p class="footer__paragraph">
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-      <form action="" class="footer__form">
-        <label for="name" class="visually-hidden">Name</label>
-        <input type="text" id="name" name="name" placeholder="NAME" />
-        <label for="email" class="visually-hidden">Email</label>
-        <input type="email" id="email" name="email" placeholder="EMAIL" />
-        <label for="message" class="visually-hidden">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          rows="2"
-          placeholder="MESSAGE"
-        ></textarea>
-        <button type="submit" class="form__submit">Send message</button>
-      </form>
-      <div class="footer__cont">
+      <div class="footer__con">
+        <p class="footer__title">Contact</p>
+        <p class="footer__paragraph">
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form action="" class="footer__form">
+          <label for="name" class="visually-hidden">Name</label>
+          <input type="text" id="name" name="name" placeholder="NAME" />
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" placeholder="EMAIL" />
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="2"
+            placeholder="MESSAGE"
+          ></textarea>
+          <button type="submit" class="form__submit">Send message</button>
+        </form>
+      </div>
+      <div class="footer__info">
         <p class="footer__name">adamkeyes</p>
         <ul class="social-links social-links--footer">
           <li>

@@ -126,6 +126,10 @@ h6 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--clr-neutral-400);
@@ -135,6 +139,7 @@ body {
 }
 
 header {
+  width: 100%;
   display: grid;
   place-items: center;
   gap: 1.25rem;
@@ -155,6 +160,7 @@ header {
 }
 
 main {
+  width: 100%;
   display: grid;
   padding: 1rem;
   gap: 5rem;
@@ -252,13 +258,21 @@ main {
 }
 
 footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: var(--clr-neutral-300);
+}
+
+.footer__con {
+  width: 100%;
   display: grid;
   place-items: center;
   text-align: center;
   gap: 1.25rem;
-  margin-top: 5rem;
-  padding: 1rem;
-  background-color: var(--clr-neutral-300);
 }
 
 .footer__title {
@@ -287,6 +301,11 @@ textarea {
   padding: 1.5rem;
   border: none;
   border-bottom: 1px solid var(--clr-neutral-100);
+  color: var(--clr-neutral-100);
+}
+
+textarea {
+  resize: vertical;
 }
 
 .form__submit {
@@ -301,7 +320,7 @@ textarea {
   line-height: 2.625;
 }
 
-.footer__cont {
+.footer__info {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -345,9 +364,9 @@ textarea {
     z-index: -1;
     max-width: 22rem;
     margin-top: -9rem;
-    margin-right: -2.5rem;
+    margin-right: -2rem;
     padding-left: 1rem;
-    margin-left: -5rem;
+    margin-left: -5.5rem;
     grid-column: 2 / 3;
     grid-row: 1 / 5;
   }
@@ -374,11 +393,54 @@ textarea {
     border-bottom: none;
   }
 
-  .footer__cont {
+  .footer__info {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1.75rem;
     border-top: 1px solid var(--clr-neutral-100);
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --fs-heading-xl: 5.5rem;
+  }
+
+  .footer__info,
+  .footer__con,
+  main,
+  header {
+    max-width: 70rem;
+  }
+
+  .card__paragraph {
+    max-width: 28rem;
+  }
+
+  .skills__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__con {
+    text-align: left;
+  }
+
+  .footer__title,
+  .footer__paragraph {
+    justify-self: start;
+  }
+
+  .footer__title {
+    font-size: var(--fs-heading-xl);
+  }
+
+  .footer__form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+
+  .footer__info {
+    grid-column: 1 / 3;
   }
 }
