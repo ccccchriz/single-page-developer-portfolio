@@ -123,6 +123,12 @@ h6 {
   border-bottom: 2px solid var(--clr-accent-green);
   text-decoration: none;
   line-height: 2.625;
+  transition: color 300ms;
+  align-self: end;
+}
+
+.main-link:is(:hover, :focus-visible) {
+  color: var(--clr-accent-green);
 }
 
 body {
@@ -157,6 +163,11 @@ header {
   gap: 1rem;
   padding: 0;
   list-style: none;
+}
+
+.social-link__image:hover {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(64%) saturate(385%)
+    hue-rotate(98deg) brightness(95%) contrast(93%);
 }
 
 main {
