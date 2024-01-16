@@ -165,6 +165,12 @@ header {
   list-style: none;
 }
 
+.social-link__image {
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: brightness(0) invert(1);
+}
+
 .social-link__image:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(64%) saturate(385%)
     hue-rotate(98deg) brightness(95%) contrast(93%);
