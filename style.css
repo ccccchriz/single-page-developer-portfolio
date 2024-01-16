@@ -491,6 +491,7 @@ textarea {
       grid-row: 1 / 2;
       justify-self: center;
       align-self: center;
+      transition: 300ms;
     }
 
     .project__image:hover,
