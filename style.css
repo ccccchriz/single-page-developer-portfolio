@@ -138,10 +138,17 @@ body {
 
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: var(--clr-neutral-400);
 
   font-family: var(--ff-primary);
   color: var(--clr-neutral-100);
+
+  background-color: var(--clr-neutral-400);
+  background-repeat: no-repeat;
+  background-image: url(assets/images/pattern-rings.svg),
+    url(assets/images/pattern-circle.svg), url(assets/images/pattern-rings.svg);
+  background-position: left -19rem top 7.5rem, right -4rem top 16rem,
+    right -19rem top 84rem;
+  background-size: 33rem 8rem, 8rem, 33rem 8rem;
 }
 
 header {
@@ -284,11 +291,15 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  padding: 1rem;
   background-color: var(--clr-neutral-300);
+  background-repeat: no-repeat;
+  background-image: url(assets/images/pattern-rings.svg);
+  background-position: left -19rem bottom 12rem;
+  background-size: 33rem 8rem;
 }
 
 .footer__con {
+  padding: 1rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -452,6 +463,11 @@ textarea {
     --fs-heading-xl: 5.5rem;
   }
 
+  body {
+    background-position: calc(50% - 42rem) calc(0% + 7.5rem),
+      calc(50% + 14rem) calc(0% + 32rem), calc(50% + 42rem) calc(0% + 64rem);
+  }
+
   .footer__info,
   .footer__con,
   main,
@@ -474,6 +490,10 @@ textarea {
 
   .projects__list {
     row-gap: 4rem;
+  }
+
+  footer {
+    background-position: calc(50% - 42rem) calc(100% - 10rem);
   }
 
   .footer__con {
