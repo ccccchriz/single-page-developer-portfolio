@@ -329,12 +329,24 @@ textarea {
   border-bottom: 2px solid var(--clr-accent-green);
   text-decoration: none;
   line-height: 2.625;
+  transition: color 300ms;
+  cursor: pointer;
+}
+
+.form__submit:is(:hover, :focus-visible) {
+  color: var(--clr-accent-green);
 }
 
 .footer__info {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.form__error {
+  color: var(--clr-error);
+  align-self: flex-end;
+  font-size: 1rem;
 }
 
 @media (min-width: 40rem) {
