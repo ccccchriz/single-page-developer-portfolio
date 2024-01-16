@@ -165,15 +165,17 @@ header {
   list-style: none;
 }
 
-.social-link__image {
-  width: 1.25rem;
-  height: 1.25rem;
-  filter: brightness(0) invert(1);
-}
+.social-link {
+  .social-link__image {
+    width: 1.25rem;
+    height: 1.25rem;
+    filter: brightness(0) invert(1);
+  }
 
-.social-link__image:hover {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(64%) saturate(385%)
-    hue-rotate(98deg) brightness(95%) contrast(93%);
+  &:is(:focus, :hover) img {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(64%) saturate(385%)
+      hue-rotate(98deg) brightness(95%) contrast(93%);
+  }
 }
 
 main {
@@ -198,10 +200,10 @@ main {
 
 .card__title {
   font-size: var(--fs-heading-xl);
-}
 
-.card__underline {
-  border-bottom: 4px solid var(--clr-accent-green);
+  span {
+    border-bottom: 4px solid var(--clr-accent-green);
+  }
 }
 
 .card__paragraph {
@@ -471,5 +473,42 @@ textarea {
 
   .footer__info {
     grid-column: 1 / 3;
+  }
+
+  /* Display the link buttons under project when hovered on the image instead */
+  .list__project {
+    grid-template-columns: 1fr;
+
+    .project__image,
+    .project__title,
+    .project__tags {
+      grid-column: auto;
+    }
+
+    .project__image,
+    a {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .project__image:hover,
+    .project__image:has(~ a:is(:hover, :focus-visible)) {
+      opacity: 0.5;
+
+      ~ a {
+        opacity: 1;
+      }
+    }
+
+    a {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    a:nth-of-type(2) {
+      transform: translateY(100%);
+    }
   }
 }
