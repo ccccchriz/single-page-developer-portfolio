@@ -20,5 +20,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor]()
-- Live Site URL: [netlify]()
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/single-page-developer-portfolio-VIZMd5tigi)
+- Live Site URL: [netlify](https://quiet-beijinho-a44de0.netlify.app)
