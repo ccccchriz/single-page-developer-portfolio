@@ -495,7 +495,7 @@ textarea {
 
     .project__image:hover,
     .project__image:has(~ a:is(:hover, :focus-visible)) {
-      opacity: 0.5;
+      opacity: 0.2;
 
       ~ a {
         opacity: 1;
