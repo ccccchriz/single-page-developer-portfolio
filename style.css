@@ -199,6 +199,7 @@ main {
 }
 
 .card__title {
+  line-height: 1;
   font-size: var(--fs-heading-xl);
 
   span {
@@ -445,12 +446,21 @@ textarea {
     max-width: 70rem;
   }
 
+  .card__title {
+    margin-top: 3rem;
+  }
+
   .card__paragraph {
     max-width: 28rem;
   }
 
   .skills__list {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .projects__list {
+    row-gap: 4rem;
   }
 
   .footer__con {
