@@ -152,7 +152,8 @@ header {
   padding: 1.25rem;
 }
 
-.header__name {
+.header__name,
+.footer__name {
   font-size: 1.5rem;
   line-height: 1;
   font-weight: var(--fw-bold);
@@ -371,10 +372,21 @@ textarea {
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .header__name,
+  .footer__name {
+    font-size: 2rem;
   }
 
   .social-links {
     gap: 2rem;
+  }
+
+  .social-link__image {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .social-links--header {
@@ -390,6 +402,7 @@ textarea {
     grid-template-columns: 1fr auto;
     justify-items: start;
     text-align: left;
+    gap: 2rem;
   }
 
   .card__image {
